@@ -5,12 +5,8 @@ import "./ExpenseFilter.css";
 const ExpenseFilter = (props) => {
 
     const dropdownHandler = (event) => {
-
-        const data = {
-            date : event.target.value
-        }
     
-        props.onChangeFilter(data);
+        props.onChangeFilter(event.target.value);
     }
 
   return (
